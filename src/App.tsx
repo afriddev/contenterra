@@ -23,7 +23,7 @@ function App() {
 
 
   return (
-    <div className="relative text-sm  pb-8">
+    <div className="relative text-sm ">
       {isLoading && <AppSpiner />} 
       <div className="w-[100vw] h-[100vh] lg:max-w-[100vw]  fixed">
         <img
@@ -46,7 +46,7 @@ function App() {
           ))}
 
         {data?.length > 0 && (
-          <div className="grid  grid-cols-1 gap-5 lg:grid-cols-4 mt-6 px-4">
+          <div className="grid  grid-cols-1 gap-5 lg:grid-cols-4 mt-6 pb-8 px-4">
             {data?.map((item, index) => {
               return <Card
                 key={index}
