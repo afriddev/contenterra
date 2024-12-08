@@ -30,7 +30,7 @@ function Card({ score, selftextHtml, title, url }: CardInterface) {
             className="w-full text-nowrap cursor-pointer font-semibold"
           >
             Url:{" "}
-            <span className="text-blue  text-xs border-b-2 border-blue text-wrap break-words">
+            <span className="text-blue  text-xs text-wrap break-words">
               {url}
             </span>
           </a>
@@ -39,7 +39,7 @@ function Card({ score, selftextHtml, title, url }: CardInterface) {
 
       {
         decodedHtml && <div className="mt-4" >
-        <label className="font-semibold"> Description :</label>
+        <label className="font-semibold"> Self HTML text :</label>
         <div
           className="html-content break-words break-all mt-2 overflow-auto max-w-[95vw] lg:max-w-[30vw]  max-h-[40vh]"
           dangerouslySetInnerHTML={{ __html: decodedHtml ?? "" }}
