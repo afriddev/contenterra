@@ -23,7 +23,7 @@ function App() {
 
 
   return (
-    <div className="relative text-sm  ">
+    <div className="relative text-sm  pb-8">
       {isLoading && <AppSpiner />} 
       <div className="w-[100vw] h-[100vh] lg:max-w-[100vw]  fixed">
         <img
