@@ -14,10 +14,10 @@ function Card({ score, selftextHtml, title, url }: CardInterface) {
 
   const decodedHtml = decodedHTMLToString();
   return (
-    <div className="w-full p-2 pt-2 rounded-md min-h-[40vh] shadow-xl border border-black/1">
+    <div className="w-full p-2 pt-2 rounded-md lg:min-h-[20vh] shadow-md border border-black">
       <div className="flex flex-col w-full">
         <label className="flex justify-center">
-          <span className="w-fit font-semibold border-b-2 text-purple-600 border-purple-600  text-center">
+          <span className="w-fit font-semibold border-b-2  border-black text-center">
             {title}
           </span>
         </label>
@@ -41,7 +41,7 @@ function Card({ score, selftextHtml, title, url }: CardInterface) {
         decodedHtml && <div className="mt-4" >
         <label className="font-semibold"> Self HTML text :</label>
         <div
-          className="html-content break-words break-all mt-2 overflow-auto max-w-[95vw] lg:max-w-[30vw]  max-h-[40vh]"
+          className="html-content break-words break-all mt-2 overflow-auto max-w-[95vw] lg:max-w-[30vw]  max-h-[20vh]"
           dangerouslySetInnerHTML={{ __html: decodedHtml ?? "" }}
         />
       </div>
