@@ -21,10 +21,10 @@ function App() {
     });
   }, []);
 
-  if (isLoading) return <AppSpiner />;
 
   return (
     <div className="relative text-sm  ">
+      {isLoading && <AppSpiner />} 
       <div className="w-[100vw] h-[100vh] lg:max-w-[100vw]  fixed">
         <img
           src="beams.jpg"
