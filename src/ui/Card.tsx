@@ -14,7 +14,7 @@ function Card({ score, selftextHtml, title, url }: CardInterface) {
 
   const decodedHtml = decodedHTMLToString();
   return (
-    <div className="w-full p-2 pt-2 bg-black/5 rounded-md min-h-[40vh] shadow-xl drop-shadow-xl border border-black/1">
+    <div className="w-full p-2 pt-2 rounded-md min-h-[40vh] shadow-xl border border-black/1">
       <div className="flex flex-col w-full">
         <label className="flex justify-center">
           <span className="w-fit font-semibold border-b-2 text-purple-600 border-purple-600  text-center">

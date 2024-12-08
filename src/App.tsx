@@ -46,7 +46,7 @@ function App() {
           ))}
 
         {data?.length > 0 && (
-          <div className="grid  grid-cols-1 gap-4 lg:grid-cols-3 mt-6">
+          <div className="grid  grid-cols-1 gap-5 lg:grid-cols-3 mt-6 px-4">
             {data?.map((item, index) => {
               return <Card
                 key={index}
